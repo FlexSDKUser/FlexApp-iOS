@@ -153,4 +153,6 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 Now, build  and run the project.
 
 
-
+PS : to recieve push notification we need your p8 key files which is issued from Apple Development Center
+	refer to this site : https://fluffy.es/p8-push-notification/
+	in Korean - https://helloworld.fingerpush.com/apns-p8-파일-생성/
