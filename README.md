@@ -216,8 +216,7 @@ This file is generated from [Firebase Console](https://console.firebase.google.c
 > Note: It is required to register the app in firebase project and provide Flextudio Team 'Server key' to send push notifiications to your apps. Alternatively, we (Flextudio Team) can assist you to generate the  `GoogleServices-Info.plist` file. For this you should provide us with <mark>.p8 APNs key file with your team id and key id</mark> from your [Apple developer account](https://developer.apple.com/account). 
 
 PS : To recieve push notification we need your p8 key files which is issued from Apple Development Center
-> Refer to this site : https://fluffy.es/p8-push-notification/  
-> In Korean - https://helloworld.fingerpush.com/apns-p8-파일-생성/
+> Refer to this site : https://support.mobiroller.com/en/knowledgebase/5-how-to-create-a-key-file-p8-on-apple-to-send-push-notifications/	
 
 
 ### Step 13: Now, build  and run the project
