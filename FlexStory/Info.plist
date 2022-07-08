@@ -30,28 +30,5 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
-	<key>NSCalendarsUsageDescription</key>
-	<string>App needs to access the calendar to track events</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Used to take picture and barcode</string>
-	<key>NSContactsUsageDescription</key>
-	<string>App needs to use contacts</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>This app requires your location information to save and query data. </string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>This app requires your location information to save and query data. </string>
-	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
-	<dict>
-		<key>AccuracyRequired</key>
-		<string>This app needs accurate location</string>
-	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This app requires your location information to save and query data. </string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>App needs to access your micophone for video recording</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>We need to write photos</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Used to get images</string>
 </dict>
 </plist>
