@@ -8,7 +8,7 @@ target 'FlexStory' do
   use_frameworks!
 
   # Pods for FlexStory
-  pod 'FlextudioSDK', '1.0.0'
+  pod 'FlextudioSDK', '1.0.2'
   
   target 'FlexStoryTests' do
     inherit! :search_paths
