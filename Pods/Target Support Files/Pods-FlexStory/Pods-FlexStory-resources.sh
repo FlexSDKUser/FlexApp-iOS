@@ -311,6 +311,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/FlextudioSDK/FlexSDK/SupportingFiles/Gifs/icon_settings-white.gif"
   install_resource "${PODS_ROOT}/FlextudioSDK/FlexSDK/SupportingFiles/Gifs/loading-dot.gif"
   install_resource "${PODS_ROOT}/FlextudioSDK/FlexSDK/SupportingFiles/Gifs/Loading2.gif"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FlextudioSDK/FlexSDKAssets.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${BUILT_PRODUCTS_DIR}/FlextudioSDK/FlextudioSDK.framework/ModuleMenuCollectionViewCell.nib"
@@ -527,6 +528,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/FlextudioSDK/FlexSDK/SupportingFiles/Gifs/icon_settings-white.gif"
   install_resource "${PODS_ROOT}/FlextudioSDK/FlexSDK/SupportingFiles/Gifs/loading-dot.gif"
   install_resource "${PODS_ROOT}/FlextudioSDK/FlexSDK/SupportingFiles/Gifs/Loading2.gif"
+  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/FlextudioSDK/FlexSDKAssets.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

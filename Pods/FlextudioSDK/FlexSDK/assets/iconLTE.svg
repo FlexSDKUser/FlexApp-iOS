@@ -1,0 +1,13 @@
+<svg id="iconLTE" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <circle id="타원_1204" data-name="타원 1204" cx="75" cy="75" r="75" fill="#f4f4f4"/>
+  <g id="그룹_12405" data-name="그룹 12405" transform="translate(42.771 48.192)">
+    <g id="그룹_12409" data-name="그룹 12409">
+      <path id="패스_19679" data-name="패스 19679" d="M0,42.616H9.575V34.652Z" transform="translate(0 11)" fill="#77787c"/>
+      <path id="패스_19680" data-name="패스 19680" d="M10.415,33.953V45.366H19.99V25.989Z" transform="translate(3.306 8.25)" fill="#cad0cf"/>
+      <path id="패스_19681" data-name="패스 19681" d="M20.83,25.29V48.116H30.4V17.327Z" transform="translate(6.612 5.5)" fill="#cad0cf"/>
+      <path id="패스_19682" data-name="패스 19682" d="M31.244,16.627V50.866h9.575V8.663Z" transform="translate(9.918 2.75)" fill="#cad0cf"/>
+      <path id="패스_19683" data-name="패스 19683" d="M51.234,0,41.659,7.963V53.616h9.575Z" transform="translate(13.224)" fill="#cad0cf"/>
+    </g>
+  </g>
+  <path id="패스_19696" data-name="패스 19696" d="M69.092,57.914l-3.647-3.647,3.6-3.6A2.157,2.157,0,0,0,66,47.615l-3.6,3.6L58.748,47.57a2.1,2.1,0,0,0-2.959,0l-.09.09a2.1,2.1,0,0,0,0,2.959l3.647,3.647-3.6,3.6a2.156,2.156,0,0,0,3.049,3.049l3.6-3.6,3.648,3.647a2.1,2.1,0,0,0,2.959,0l.09-.09a2.1,2.1,0,0,0,0-2.959" transform="translate(-11.393 11.856)" fill="#77787c" fill-rule="evenodd"/>
+</svg>

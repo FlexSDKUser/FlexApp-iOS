@@ -1,0 +1,67 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">    
+  <title>network not found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="HandheldFriendly" content="true">    
+  <style>
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .msgWrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background-color: #fff; }
+      .msgWrap > .contentsArea {
+        text-align: center; }
+        .msgWrap > .contentsArea > .img {
+          display: inline-block;
+          width: 9.375rem;
+          height: 9.375rem; 
+            background-image: url("iconWifi.svg");
+            background-repeat: no-repeat;}
+        .msgWrap > .contentsArea > .txtTitle {
+          padding: 2rem 0 0.5rem 0;
+          color: rgba(17, 17, 17, 0.7);
+          font-weight: bold;
+          font-size: 1.125rem; }
+        .msgWrap > .contentsArea > .txtDescription {
+          margin: 0 auto;
+          max-width: 19rem;
+          padding: 0rem 0 2rem 0;
+          color: rgba(17, 17, 17, 0.5); }
+        .msgWrap > .contentsArea > .btnArea {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0rem 0 3rem 0; }
+          .msgWrap > .contentsArea > .btnArea > .btn {
+            padding: .75rem 2rem;
+            color: #f9f9f9;
+            background-color: #5BC43A;
+            border-radius: 2rem;
+            font-size: 1rem; }
+            .msgWrap > .contentsArea > .btnArea > .btn:active {
+              box-shadow: inset 100rem 100rem 1rem rgba(0, 0, 0, 0.05); }  
+      </style>
+</head>
+
+<body translate="no">
+<!-- If Wifi is connected, show "turn off wifi" message -->                      
+<article class="msgWrap">
+    <section class="contentsArea">
+        <i class="img"></i>
+        <p class="txtTitle">네트워크 연결이 원활하지 않습니다.</p> <!-- Network is not connected-->
+        <p class="txtDescription">불안정한 wifi환경에서는 5G/LTE 데이터 모드로 연결 후 다시 시도해 보세요..</p>  <!-- Wifi network is not stable, please try again after turn off wifi. -->
+        <div class="btnArea">
+            <a class="btn">확인</a>  <!-- Confirm-->
+        </div>
+    </section>
+</article>
+ 
+</body></html>

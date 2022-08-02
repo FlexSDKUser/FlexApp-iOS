@@ -213,3 +213,4 @@ ${PODS_ROOT}/FlextudioSDK/FlexSDK/SupportingFiles/Gifs/icon_demo_smile.gif
 ${PODS_ROOT}/FlextudioSDK/FlexSDK/SupportingFiles/Gifs/icon_settings-white.gif
 ${PODS_ROOT}/FlextudioSDK/FlexSDK/SupportingFiles/Gifs/loading-dot.gif
 ${PODS_ROOT}/FlextudioSDK/FlexSDK/SupportingFiles/Gifs/Loading2.gif
+${PODS_CONFIGURATION_BUILD_DIR}/FlextudioSDK/FlexSDKAssets.bundle

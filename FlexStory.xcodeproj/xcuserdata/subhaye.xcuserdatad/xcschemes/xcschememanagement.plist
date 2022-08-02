@@ -6,8 +6,43 @@
 	<dict>
 		<key>FlexStory.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
-			<integer>22</integer>
+			<integer>18</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>267ED066287D6CFD0007133C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>267ED07B287D6CFE0007133C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>267ED085287D6CFF0007133C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26B277BF2859AA0300CFCB30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26B277D52859AA0500CFCB30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26B277DF2859AA0500CFCB30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

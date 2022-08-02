@@ -70,7 +70,7 @@ target '<yourproject>' do
   use_frameworks! 
   # Pods for <yourproject>
   # Add FlextudioSDK pod with specific version
-  pod 'FlextudioSDK', '1.0.0'
+  pod 'FlextudioSDK', '1.0.3'
   end
 
 ```
@@ -193,11 +193,23 @@ In `AppDelegate.swift` file, follow these steps:
             completionHandler: {,  in })
         Messaging.messaging().delegate = self
         application.registerForRemoteNotifications()
+        
+        if launchOptions?[UIApplication.LaunchOptionsKey.remoteNotification] != nil {
+            let dic = launchOptions?[UIApplication.LaunchOptionsKey.remoteNotification] as? NSDictionary
+            NotiConstants.sharedInstance.userDefaults.set(dic, forKey: NotiConstants.notificationpayload);
+        }
 	```
 - add these function
 	```swift
 	func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.alert, .badge, .sound])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        let title = response.notification.request.content.title
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: NotiConstants.notificationpayload), object: title, userInfo: userInfo)
+        completionHandler()
     }
 	```
 ![appdelegate](https://create-s3-test1.s3.ap-northeast-2.amazonaws.com/readme-ios-sdk/appdelegate.png "appdelegate")  

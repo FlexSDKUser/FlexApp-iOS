@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 import FirebaseMessaging
+import FlextudioSDK
 //import Companity
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
@@ -25,12 +26,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             completionHandler: {_, _ in })
         Messaging.messaging().delegate = self
         application.registerForRemoteNotifications()
+        //check if app opened from notification click
+        if launchOptions?[UIApplication.LaunchOptionsKey.remoteNotification] != nil {
+            let dic = launchOptions?[UIApplication.LaunchOptionsKey.remoteNotification] as? NSDictionary
+            NotiConstants.sharedInstance.userDefaults.set(dic, forKey: NotiConstants.notificationpayload);
+        }
     
         return true
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.alert, .badge, .sound])
+    }
+    
+    // when app is in bg or fg
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        let title = response.notification.request.content.title
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: NotiConstants.notificationpayload), object: title, userInfo: userInfo)
+        completionHandler()
     }
 
 

@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FlextudioSDK-FlexSDKAssets.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FlextudioSDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>

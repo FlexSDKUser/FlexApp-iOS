@@ -185,8 +185,8 @@
 				26B277BC2859AA0300CFCB30 /* Sources */,
 				26B277BD2859AA0300CFCB30 /* Frameworks */,
 				26B277BE2859AA0300CFCB30 /* Resources */,
-				EDEA72451EB17486147444B8 /* [CP] Embed Pods Frameworks */,
-				BD1C952A7FAC0D71B73DA024 /* [CP] Copy Pods Resources */,
+				9CC3A3097F3CC0E1177E07A1 /* [CP] Embed Pods Frameworks */,
+				B74C9A905286E759EC648FB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,8 +224,8 @@
 				26B277DC2859AA0500CFCB30 /* Sources */,
 				26B277DD2859AA0500CFCB30 /* Frameworks */,
 				26B277DE2859AA0500CFCB30 /* Resources */,
-				CD4EF59B50C361C7A1AD87F6 /* [CP] Embed Pods Frameworks */,
-				00C07E797B1691A7A49F7F9C /* [CP] Copy Pods Resources */,
+				42DEC4E2F432547BA381AEC9 /* [CP] Embed Pods Frameworks */,
+				4F0ADFBACA51FEA937A401F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,23 +309,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00C07E797B1691A7A49F7F9C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		03D948C9ABFB22B522C414FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +329,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42DEC4E2F432547BA381AEC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F0ADFBACA51FEA937A401F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC3A3097F3CC0E1177E07A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A2910E413DB1A9907B4C37E6 /* [CP] Check Pods Manifest.lock */ = {
@@ -392,7 +426,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BD1C952A7FAC0D71B73DA024 /* [CP] Copy Pods Resources */ = {
+		B74C9A905286E759EC648FB7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -407,40 +441,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD4EF59B50C361C7A1AD87F6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDEA72451EB17486147444B8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

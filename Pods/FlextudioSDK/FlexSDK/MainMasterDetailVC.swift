@@ -11,6 +11,7 @@ import WebKit
 import ObjectMapper
 import FirebaseMessaging
 import SDWebImage
+import Network
 
 enum Module: Int {
     case none = 5000, companity, attendence, board, contact
@@ -23,7 +24,7 @@ protocol MasterDetailActionDelegate {
     func closeMenuDrawer()
 }
 
-public class MainMasterDetailVC: UIViewController,WKScriptMessageHandler, WKNavigationDelegate  {
+public class MainMasterDetailVC: UIViewController, WKScriptMessageHandler, WKNavigationDelegate {
     
     //MenuView with size constraints
     @IBOutlet weak var menuView: UIView!
@@ -141,6 +142,7 @@ public class MainMasterDetailVC: UIViewController,WKScriptMessageHandler, WKNavi
         let webPreference = WKPreferences()
         webPreference.javaScriptEnabled = true
         webConfiguration.preferences = webPreference
+        webConfiguration.setURLSchemeHandler(AssetsSchemeHandler(), forURLScheme: "assets")
         webView = WKWebView(frame: .zero, configuration: webConfiguration)
         webView.navigationDelegate = self
         mainContainerView.insertSubview(webView, at: 1)
@@ -157,7 +159,29 @@ public class MainMasterDetailVC: UIViewController,WKScriptMessageHandler, WKNavi
         webView.scrollView.bounces = false
         webView.scrollView.bouncesZoom = false
         webView.uiDelegate = self
-        
+        let blockRules  = """
+     [{
+           "trigger": {
+               "url-filter": "assets://.*",
+               "if-domain": ["app.flextudio.com"],
+               "load-context": ["child-frame"],
+               "resource-type": ["document", "svg-document", "image"],
+               "load-type": ["third-party"]
+           },
+           "action": {
+               "type": "make-https"
+           }
+       }]
+  """
+        WKContentRuleListStore.default().compileContentRuleList(
+          forIdentifier: "MWWKWebViewContentRules", // ContentBlockingRules
+          encodedContentRuleList: blockRules) {(contentRuleList, error) in
+              if let error = error {
+                  error.localizedDescription
+                  return
+              }
+              self.webView.configuration.userContentController.add(contentRuleList!)
+          }
         //WKUserContentController를 사용하여 웹뷰에서 스크립트로 네이티브 함수를 호출 가능하도록 함
         //사용 예시
         //window.webkit.messageHandlers.MobileTest.postMessage('gps')
@@ -187,7 +211,10 @@ public class MainMasterDetailVC: UIViewController,WKScriptMessageHandler, WKNavi
         //https://zeddios.tistory.com/372
         //let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
 
-        if let myURL = URL(string: "https://appdev.flextudio.com/") {
+        NotificationCenter.default.addObserver(self,selector: #selector(notiDidReceive), name: NSNotification.Name(rawValue: NotiConstants.notificationpayload), object: nil)
+        let notificationPayload = NotiConstants.sharedInstance.userDefaults.object(forKey: NotiConstants.notificationpayload) as? NSDictionary
+        NotiConstants.sharedInstance.userDefaults.removeObject(forKey: NotiConstants.notificationpayload)
+        if !loadWebvviewUrl(notificationPayload as? [AnyHashable : Any]), let myURL = URL(string: "https://app.flextudio.com/") {
             let myRequest = URLRequest(url: myURL)
             webView.load(myRequest)
         }
@@ -254,6 +281,25 @@ public class MainMasterDetailVC: UIViewController,WKScriptMessageHandler, WKNavi
         //TokenHandler().saveTokenToDB()
         
         addKeyboardNotification()
+    }
+    
+    fileprivate func loadWebvviewUrl(_ notificationPayload: [AnyHashable : Any]?) -> Bool {
+        if let actionJson = notificationPayload?[NotiConstants.actionJson], let actionBody = actionJson as? String, let action = try? JSONSerialization.jsonObject(with: actionBody.data(using: .utf8)!, options: []) as? [String:String] {
+            if let linkParm = action["linkParam"] {
+                if let url = URL(string: "https://app.flextudio.com/?\(linkParm)") {
+                    webView.load(URLRequest(url: url))
+                    return true
+                }
+            }
+        }
+        return false
+    }
+    
+    @objc func notiDidReceive(notification: NSNotification){
+        DispatchQueue.main.async {
+            let notificationPayload = notification.userInfo;
+            self.loadWebvviewUrl(notificationPayload)
+        }
     }
     
     func getLoginBaseForm(){
@@ -683,6 +729,15 @@ public class MainMasterDetailVC: UIViewController,WKScriptMessageHandler, WKNavi
     
     public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         showFailMessage()
+    }
+    
+    public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        if(error._code == NSURLErrorNotConnectedToInternet || error._code == NSURLErrorNetworkConnectionLost) {
+            let assetPath = NWPathMonitor().currentPath.usesInterfaceType(.wifi) ? "assets://app.flextudio.com/msgWifi.html" : "assets://app.flextudio.com/msgLTE.html"
+            if let schemeURL = URL(string: assetPath) {
+                webView.load(URLRequest(url: schemeURL))
+            }
+        }
     }
     
     func removeWebViewLoading() {
@@ -1265,7 +1320,7 @@ extension MainMasterDetailVC: WKUIDelegate {
     public func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         
         // Create new WKWebView with custom configuration here
-        let configuration = WKWebViewConfiguration()
+        //let configuration = WKWebViewConfiguration()
 //        configuration.userContentController = contentController
         return WKWebView(frame: webView.frame, configuration: configuration)
     }
