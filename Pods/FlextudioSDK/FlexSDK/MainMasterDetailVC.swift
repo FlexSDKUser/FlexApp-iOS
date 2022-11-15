@@ -945,6 +945,26 @@ public class MainMasterDetailVC: UIViewController, WKScriptMessageHandler, WKNav
     @objc func keyboardWillHide(){
         webView.scrollView.setContentOffset(CGPoint.zero, animated: true)
     }
+    fileprivate func getDownloadDelegate(_ function: String) -> DownloadDelegate {
+        return {
+            class Delegate : DownloadDelegate {
+                let function: String
+                let webView: WKWebView
+                init(_ function: String, webView: WKWebView){
+                    self.function = function
+                    self.webView = webView
+                }
+                func downloadEnd(isSuceed: Bool, message: String?) {
+                    DispatchQueue.main.async { [unowned self] in
+                        let js = "\(function)(\(isSuceed), '\(message ?? "")')"
+                        webView.evaluateJavaScript(js)
+                    }
+                }
+            }
+            return Delegate(function, webView: webView)
+        }()
+    }
+
     /////for gps
     public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         print(message)
@@ -994,7 +1014,26 @@ public class MainMasterDetailVC: UIViewController, WKScriptMessageHandler, WKNav
                         if let serviceURL = serviceURL, let bis = bis, let filePath = filePath {
                             webFileDownload(id: id, serviceURL:serviceURL, bis:bis, filePath: filePath,callback:systemCallback)
                         }
-                        
+                    case "s3down":
+                        let partUrls = messageObject["partUrls"] as? [String]
+//                        let partsCount = messageObject["partsCount"] as? Int
+                        let partPositions = messageObject["partPositions"] as? [UInt64]
+                        let filename = (messageObject["filename"] as? String) ?? ""
+                        let parallelDownloadCount = messageObject["parallelDownloadCount"] as? Int
+                        if let function = callback?["function"] as? String {
+                            let delegate = getDownloadDelegate(function)
+                            _ = S3Downloader(downloadUrls :partUrls!, filename: filename, partPositions: partPositions, uivc: self, concurrentCount: parallelDownloadCount, delegate: delegate)
+                        }
+                    case "s3range":
+                        let key = messageObject["key"] as! String
+                        let rangeArr = messageObject["rangeArr"] as! [String]
+                        let filename = (messageObject["filename"] as? String) ?? ""
+                        let partPositions = messageObject["partPositions"] as? [UInt64]
+                        let parallelDownloadCount = messageObject["parallelDownloadCount"] as? Int
+                        if let function = callback?["function"] as? String {
+                            let delegate = getDownloadDelegate(function)
+                            _ = S3Downloader(key: key, range: rangeArr, filename : filename, partPositions: partPositions, uivc: self, concurrentCount: parallelDownloadCount, delegate: delegate)
+                        }
                     case "openscenario":
                         if let url = param?["url"] as? String {
                             clearPreviousload()

@@ -70,7 +70,7 @@ target '<yourproject>' do
   use_frameworks! 
   # Pods for <yourproject>
   # Add FlextudioSDK pod with specific version
-  pod 'FlextudioSDK', '1.0.3'
+  pod 'FlextudioSDK', '1.0.4'
   end
 
 ```

@@ -185,8 +185,8 @@
 				26B277BC2859AA0300CFCB30 /* Sources */,
 				26B277BD2859AA0300CFCB30 /* Frameworks */,
 				26B277BE2859AA0300CFCB30 /* Resources */,
-				9CC3A3097F3CC0E1177E07A1 /* [CP] Embed Pods Frameworks */,
-				B74C9A905286E759EC648FB7 /* [CP] Copy Pods Resources */,
+				5E17FDB8AAAF1FF5D607C70A /* [CP] Embed Pods Frameworks */,
+				9F438E114E382814726DC479 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,8 +224,8 @@
 				26B277DC2859AA0500CFCB30 /* Sources */,
 				26B277DD2859AA0500CFCB30 /* Frameworks */,
 				26B277DE2859AA0500CFCB30 /* Resources */,
-				42DEC4E2F432547BA381AEC9 /* [CP] Embed Pods Frameworks */,
-				4F0ADFBACA51FEA937A401F9 /* [CP] Copy Pods Resources */,
+				A9D2705490E3335C11C948FC /* [CP] Embed Pods Frameworks */,
+				D556D59CBA52A83AC6D62E7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,41 +331,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		42DEC4E2F432547BA381AEC9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4F0ADFBACA51FEA937A401F9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9CC3A3097F3CC0E1177E07A1 /* [CP] Embed Pods Frameworks */ = {
+		5E17FDB8AAAF1FF5D607C70A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,6 +346,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F438E114E382814726DC479 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A2910E413DB1A9907B4C37E6 /* [CP] Check Pods Manifest.lock */ = {
@@ -404,6 +387,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A9D2705490E3335C11C948FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B2F4420498DB398639E463F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,21 +426,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B74C9A905286E759EC648FB7 /* [CP] Copy Pods Resources */ = {
+		D556D59CBA52A83AC6D62E7C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -626,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7315785FCAC2E645254B5660 /* Pods-FlexStory.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -670,6 +671,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC5B0CC5FC2B5892C7470A1D /* Pods-FlexStory.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -714,7 +716,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C789713FDB49B1BE2B7827C /* Pods-FlexStoryTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -735,7 +737,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21452295D133C3A3CDB5BA4C /* Pods-FlexStoryTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -756,7 +758,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06A113A61E7D1C8FC4DA0246 /* Pods-FlexStory-FlexStoryUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6K4SJ5855G;
@@ -775,7 +777,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 648B8D00FE085225E8BD4C32 /* Pods-FlexStory-FlexStoryUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6K4SJ5855G;
