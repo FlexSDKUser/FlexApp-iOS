@@ -190,14 +190,10 @@ In `AppDelegate.swift` file, follow these steps:
         let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
         UNUserNotificationCenter.current().requestAuthorization(
             options: authOptions,
-            completionHandler: {,  in })
+            completionHandler: {_,_  in })
         Messaging.messaging().delegate = self
         application.registerForRemoteNotifications()
-        
-        if launchOptions?[UIApplication.LaunchOptionsKey.remoteNotification] != nil {
-            let dic = launchOptions?[UIApplication.LaunchOptionsKey.remoteNotification] as? NSDictionary
-            NotiConstants.sharedInstance.userDefaults.set(dic, forKey: NotiConstants.notificationpayload);
-        }
+      
 	```
 - add these function
 	```swift
