@@ -152,32 +152,37 @@ Note:  Alternately, you can add these permission by directly copying below code 
 ```
 
 ### Step 9: Initialize FlexApp UI 
-In `SceneDelegate.swift` add these codes.
-```swift
-func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let winScene = (scene as? UIWindowScene) else { return }
-        
-        let win = UIWindow(windowScene: winScene)
-        win.rootViewController = createRootViewController()
-        win.makeKeyAndVisible()
-
-        window = win
-    }
+In `SceneDelegate.swift` file, follow these steps:
+- Import FlextudioSDK Library
+  ```swift
+  import FlextudioSDK
+  ```
+- Add these codes.
+  ```swift
+  func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    guard let winScene = (scene as? UIWindowScene) else { return }
     
-    func createRootViewController() -> UIViewController {
-        let flexBundle = Bundle(for: MainMasterDetailVC.self)
-        let storyboard = UIStoryboard(name: "FlexSDK", bundle: flexBundle)
-        return storyboard.instantiateInitialViewController() ?? UIViewController()
-    }
- 
-```
+    let win = UIWindow(windowScene: winScene)
+    win.rootViewController = createRootViewController()
+    win.makeKeyAndVisible()
+    
+    window = win
+  }
+  
+  func createRootViewController() -> UIViewController {
+    let flexBundle = Bundle(for: MainMasterDetailVC.self)
+    let storyboard = UIStoryboard(name: "FlexSDK", bundle: flexBundle)
+    return storyboard.instantiateInitialViewController() ?? UIViewController()
+  }
+  ```
 
 ### Step 10: To receive Push Notifications
 In `AppDelegate.swift` file, follow these steps:
-- Import Firebase Library
+- Import Firebase and FlextudioSDK Libraries
 	```swift
 	import FirebaseCore
 	import FirebaseMessaging
+ 	import FlextudioSDK
 	```
 - extend following Protocols in **AppDelegate** class
 	```swift
