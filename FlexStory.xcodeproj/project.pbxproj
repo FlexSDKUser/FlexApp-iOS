@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25993D9F2DA2795CC77C3F56 /* Pods_FlexStoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB7090580F44E7F27D6A5182 /* Pods_FlexStoryTests.framework */; };
 		26A6D457287E75E10041B2FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B277CC2859AA0500CFCB30 /* Assets.xcassets */; };
 		26A8D149285B02F400C846E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26A8D148285B02F400C846E8 /* GoogleService-Info.plist */; };
 		26B277C42859AA0300CFCB30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B277C32859AA0300CFCB30 /* AppDelegate.swift */; };
@@ -17,9 +18,8 @@
 		26B277DB2859AA0500CFCB30 /* FlexStoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B277DA2859AA0500CFCB30 /* FlexStoryTests.swift */; };
 		26B277E52859AA0500CFCB30 /* FlexStoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B277E42859AA0500CFCB30 /* FlexStoryUITests.swift */; };
 		26B277E72859AA0500CFCB30 /* FlexStoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B277E62859AA0500CFCB30 /* FlexStoryUITestsLaunchTests.swift */; };
-		3DDFAB20CE8038112EE395FA /* Pods_FlexStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DB93766FAA36FD47A65CF6 /* Pods_FlexStory.framework */; };
-		6D9B4AF6EEB90BEDD06767DB /* Pods_FlexStoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739EEBA02F471C5D02C45C69 /* Pods_FlexStoryTests.framework */; };
-		C60DD5AB7F297D3C98CDA444 /* Pods_FlexStory_FlexStoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA6CAAFF25C822EEEA6DDDE /* Pods_FlexStory_FlexStoryUITests.framework */; };
+		C32656AF26E0F9D1660339A5 /* Pods_FlexStory_FlexStoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F3805153AE42A12CDBFBD7 /* Pods_FlexStory_FlexStoryUITests.framework */; };
+		D940BC352BE10D48C18BC6C8 /* Pods_FlexStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6244830C509E5772D4489B /* Pods_FlexStory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06A113A61E7D1C8FC4DA0246 /* Pods-FlexStory-FlexStoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStory-FlexStoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		21452295D133C3A3CDB5BA4C /* Pods-FlexStoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStoryTests.release.xcconfig"; path = "Target Support Files/Pods-FlexStoryTests/Pods-FlexStoryTests.release.xcconfig"; sourceTree = "<group>"; };
-		267ED02E287D6BDC0007133C /* FlexStory copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FlexStory copy-Info.plist"; path = "/Users/subhaye/FlexApp-iOS/FlexStory copy-Info.plist"; sourceTree = "<absolute>"; };
+		0523142DB1F081E9084EC807 /* Pods-FlexStory-FlexStoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStory-FlexStoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		26A8D147285AFA5B00C846E8 /* FlexStory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlexStory.entitlements; sourceTree = "<group>"; };
 		26A8D148285B02F400C846E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		26B277C02859AA0300CFCB30 /* FlexStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,13 +56,14 @@
 		26B277E02859AA0500CFCB30 /* FlexStoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlexStoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B277E42859AA0500CFCB30 /* FlexStoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexStoryUITests.swift; sourceTree = "<group>"; };
 		26B277E62859AA0500CFCB30 /* FlexStoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexStoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		42DB93766FAA36FD47A65CF6 /* Pods_FlexStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C789713FDB49B1BE2B7827C /* Pods-FlexStoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStoryTests.debug.xcconfig"; path = "Target Support Files/Pods-FlexStoryTests/Pods-FlexStoryTests.debug.xcconfig"; sourceTree = "<group>"; };
-		648B8D00FE085225E8BD4C32 /* Pods-FlexStory-FlexStoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStory-FlexStoryUITests.release.xcconfig"; path = "Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests.release.xcconfig"; sourceTree = "<group>"; };
-		7315785FCAC2E645254B5660 /* Pods-FlexStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStory.debug.xcconfig"; path = "Target Support Files/Pods-FlexStory/Pods-FlexStory.debug.xcconfig"; sourceTree = "<group>"; };
-		739EEBA02F471C5D02C45C69 /* Pods_FlexStoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexStoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBA6CAAFF25C822EEEA6DDDE /* Pods_FlexStory_FlexStoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexStory_FlexStoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC5B0CC5FC2B5892C7470A1D /* Pods-FlexStory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStory.release.xcconfig"; path = "Target Support Files/Pods-FlexStory/Pods-FlexStory.release.xcconfig"; sourceTree = "<group>"; };
+		9D6244830C509E5772D4489B /* Pods_FlexStory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexStory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E4BFD7B9103EF7508023E4 /* Pods-FlexStory-FlexStoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStory-FlexStoryUITests.release.xcconfig"; path = "Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFAAB27CB73CAD6985D86BE1 /* Pods-FlexStoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStoryTests.release.xcconfig"; path = "Target Support Files/Pods-FlexStoryTests/Pods-FlexStoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		D6F3805153AE42A12CDBFBD7 /* Pods_FlexStory_FlexStoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexStory_FlexStoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DC4BED6F88779F69556B96 /* Pods-FlexStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStory.debug.xcconfig"; path = "Target Support Files/Pods-FlexStory/Pods-FlexStory.debug.xcconfig"; sourceTree = "<group>"; };
+		EC71BC9AD1D2FFF2B2CCB2B9 /* Pods-FlexStory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStory.release.xcconfig"; path = "Target Support Files/Pods-FlexStory/Pods-FlexStory.release.xcconfig"; sourceTree = "<group>"; };
+		ECE5C2FB4ED6A7309157013B /* Pods-FlexStoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlexStoryTests.debug.xcconfig"; path = "Target Support Files/Pods-FlexStoryTests/Pods-FlexStoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB7090580F44E7F27D6A5182 /* Pods_FlexStoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlexStoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DDFAB20CE8038112EE395FA /* Pods_FlexStory.framework in Frameworks */,
+				D940BC352BE10D48C18BC6C8 /* Pods_FlexStory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9B4AF6EEB90BEDD06767DB /* Pods_FlexStoryTests.framework in Frameworks */,
+				25993D9F2DA2795CC77C3F56 /* Pods_FlexStoryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C60DD5AB7F297D3C98CDA444 /* Pods_FlexStory_FlexStoryUITests.framework in Frameworks */,
+				C32656AF26E0F9D1660339A5 /* Pods_FlexStory_FlexStoryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +97,12 @@
 		1D7B3206BD960E4E9EF40500 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7315785FCAC2E645254B5660 /* Pods-FlexStory.debug.xcconfig */,
-				EC5B0CC5FC2B5892C7470A1D /* Pods-FlexStory.release.xcconfig */,
-				06A113A61E7D1C8FC4DA0246 /* Pods-FlexStory-FlexStoryUITests.debug.xcconfig */,
-				648B8D00FE085225E8BD4C32 /* Pods-FlexStory-FlexStoryUITests.release.xcconfig */,
-				4C789713FDB49B1BE2B7827C /* Pods-FlexStoryTests.debug.xcconfig */,
-				21452295D133C3A3CDB5BA4C /* Pods-FlexStoryTests.release.xcconfig */,
+				E4DC4BED6F88779F69556B96 /* Pods-FlexStory.debug.xcconfig */,
+				EC71BC9AD1D2FFF2B2CCB2B9 /* Pods-FlexStory.release.xcconfig */,
+				0523142DB1F081E9084EC807 /* Pods-FlexStory-FlexStoryUITests.debug.xcconfig */,
+				B4E4BFD7B9103EF7508023E4 /* Pods-FlexStory-FlexStoryUITests.release.xcconfig */,
+				ECE5C2FB4ED6A7309157013B /* Pods-FlexStoryTests.debug.xcconfig */,
+				BFAAB27CB73CAD6985D86BE1 /* Pods-FlexStoryTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -116,8 +115,7 @@
 				26B277E32859AA0500CFCB30 /* FlexStoryUITests */,
 				26B277C12859AA0300CFCB30 /* Products */,
 				1D7B3206BD960E4E9EF40500 /* Pods */,
-				3A9169BC5D952492ABE2BF10 /* Frameworks */,
-				267ED02E287D6BDC0007133C /* FlexStory copy-Info.plist */,
+				7B62DDC4AE3D45EFFB4B7D63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,12 +162,12 @@
 			path = FlexStoryUITests;
 			sourceTree = "<group>";
 		};
-		3A9169BC5D952492ABE2BF10 /* Frameworks */ = {
+		7B62DDC4AE3D45EFFB4B7D63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42DB93766FAA36FD47A65CF6 /* Pods_FlexStory.framework */,
-				BBA6CAAFF25C822EEEA6DDDE /* Pods_FlexStory_FlexStoryUITests.framework */,
-				739EEBA02F471C5D02C45C69 /* Pods_FlexStoryTests.framework */,
+				9D6244830C509E5772D4489B /* Pods_FlexStory.framework */,
+				D6F3805153AE42A12CDBFBD7 /* Pods_FlexStory_FlexStoryUITests.framework */,
+				FB7090580F44E7F27D6A5182 /* Pods_FlexStoryTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,12 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26B277EA2859AA0500CFCB30 /* Build configuration list for PBXNativeTarget "FlexStory" */;
 			buildPhases = (
-				03D948C9ABFB22B522C414FD /* [CP] Check Pods Manifest.lock */,
+				6BCA9F487D99A5333C65ACAD /* [CP] Check Pods Manifest.lock */,
 				26B277BC2859AA0300CFCB30 /* Sources */,
 				26B277BD2859AA0300CFCB30 /* Frameworks */,
 				26B277BE2859AA0300CFCB30 /* Resources */,
-				5E17FDB8AAAF1FF5D607C70A /* [CP] Embed Pods Frameworks */,
-				9F438E114E382814726DC479 /* [CP] Copy Pods Resources */,
+				C583AAABF2137C50E537F42B /* [CP] Embed Pods Frameworks */,
+				7FA3109BD0BCA6150C1197CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,7 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26B277ED2859AA0500CFCB30 /* Build configuration list for PBXNativeTarget "FlexStoryTests" */;
 			buildPhases = (
-				A2910E413DB1A9907B4C37E6 /* [CP] Check Pods Manifest.lock */,
+				E9BAF4079196651E04390B5E /* [CP] Check Pods Manifest.lock */,
 				26B277D22859AA0500CFCB30 /* Sources */,
 				26B277D32859AA0500CFCB30 /* Frameworks */,
 				26B277D42859AA0500CFCB30 /* Resources */,
@@ -220,12 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26B277F02859AA0500CFCB30 /* Build configuration list for PBXNativeTarget "FlexStoryUITests" */;
 			buildPhases = (
-				B2F4420498DB398639E463F4 /* [CP] Check Pods Manifest.lock */,
+				26DBC422230C2D8BF9826A77 /* [CP] Check Pods Manifest.lock */,
 				26B277DC2859AA0500CFCB30 /* Sources */,
 				26B277DD2859AA0500CFCB30 /* Frameworks */,
 				26B277DE2859AA0500CFCB30 /* Resources */,
-				A9D2705490E3335C11C948FC /* [CP] Embed Pods Frameworks */,
-				D556D59CBA52A83AC6D62E7C /* [CP] Copy Pods Resources */,
+				09D312C8E44438EE89B4DC6B /* [CP] Embed Pods Frameworks */,
+				85BB21F997A24FF9EEDE4D5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,85 +307,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03D948C9ABFB22B522C414FD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FlexStory-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E17FDB8AAAF1FF5D607C70A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9F438E114E382814726DC479 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2910E413DB1A9907B4C37E6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FlexStoryTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A9D2705490E3335C11C948FC /* [CP] Embed Pods Frameworks */ = {
+		09D312C8E44438EE89B4DC6B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -404,7 +324,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B2F4420498DB398639E463F4 /* [CP] Check Pods Manifest.lock */ = {
+		26DBC422230C2D8BF9826A77 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,7 +346,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D556D59CBA52A83AC6D62E7C /* [CP] Copy Pods Resources */ = {
+		6BCA9F487D99A5333C65ACAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlexStory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FA3109BD0BCA6150C1197CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85BB21F997A24FF9EEDE4D5F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,6 +400,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory-FlexStoryUITests/Pods-FlexStory-FlexStoryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C583AAABF2137C50E537F42B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlexStory/Pods-FlexStory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9BAF4079196651E04390B5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlexStoryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -624,7 +622,7 @@
 		};
 		26B277EB2859AA0500CFCB30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7315785FCAC2E645254B5660 /* Pods-FlexStory.debug.xcconfig */;
+			baseConfigurationReference = E4DC4BED6F88779F69556B96 /* Pods-FlexStory.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -633,31 +631,29 @@
 				CODE_SIGN_ENTITLEMENTS = FlexStory/FlexStory.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 3KUTUL745X;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlexStory/Info.plist;
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "App needs to access the calendar to track events";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to take picture and barcode";
-				INFOPLIST_KEY_NSContactsUsageDescription = "App needs to use contacts";
+				INFOPLIST_KEY_NSContactsUsageDescription = "This app requires contacts access to function properly.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires your location information to save and query data. ";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires your location information to save and query data. ";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires your location information to save and query data. ";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App needs to access your micophone for video recording";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to write photos";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used to get images";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires photo library access to function properly.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires used Image to function properly.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = flex.FlexStoryEmpty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -669,7 +665,7 @@
 		};
 		26B277EC2859AA0500CFCB30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC5B0CC5FC2B5892C7470A1D /* Pods-FlexStory.release.xcconfig */;
+			baseConfigurationReference = EC71BC9AD1D2FFF2B2CCB2B9 /* Pods-FlexStory.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -678,31 +674,29 @@
 				CODE_SIGN_ENTITLEMENTS = FlexStory/FlexStory.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = 3KUTUL745X;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlexStory/Info.plist;
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "App needs to access the calendar to track events";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to take picture and barcode";
-				INFOPLIST_KEY_NSContactsUsageDescription = "App needs to use contacts";
+				INFOPLIST_KEY_NSContactsUsageDescription = "This app requires contacts access to function properly.";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires your location information to save and query data. ";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app requires your location information to save and query data. ";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires your location information to save and query data. ";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App needs to access your micophone for video recording";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to write photos";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used to get images";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This app requires photo library access to function properly.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires used Image to function properly.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = flex.FlexStoryEmpty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -714,7 +708,7 @@
 		};
 		26B277EE2859AA0500CFCB30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C789713FDB49B1BE2B7827C /* Pods-FlexStoryTests.debug.xcconfig */;
+			baseConfigurationReference = ECE5C2FB4ED6A7309157013B /* Pods-FlexStoryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -735,7 +729,7 @@
 		};
 		26B277EF2859AA0500CFCB30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21452295D133C3A3CDB5BA4C /* Pods-FlexStoryTests.release.xcconfig */;
+			baseConfigurationReference = BFAAB27CB73CAD6985D86BE1 /* Pods-FlexStoryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -756,7 +750,7 @@
 		};
 		26B277F12859AA0500CFCB30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06A113A61E7D1C8FC4DA0246 /* Pods-FlexStory-FlexStoryUITests.debug.xcconfig */;
+			baseConfigurationReference = 0523142DB1F081E9084EC807 /* Pods-FlexStory-FlexStoryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -775,7 +769,7 @@
 		};
 		26B277F22859AA0500CFCB30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 648B8D00FE085225E8BD4C32 /* Pods-FlexStory-FlexStoryUITests.release.xcconfig */;
+			baseConfigurationReference = B4E4BFD7B9103EF7508023E4 /* Pods-FlexStory-FlexStoryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;

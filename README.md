@@ -25,7 +25,7 @@ The minimum requirements for the <span style="color:orange"> Flextudio SDK </spa
 
 - `Xcode 13.0 or higher`
 - `Swift 5.1 or higher`
-- `iOS 13.0 or higher`
+- `iOS 15.0 or higher`
 - `Cocoapods`
 
 > **Note**: <span style="color:orange"> Flextudio SDK </span> includes initialization of firebase push notification and other dependencies. You are only required to include google-services.plist corresponding to your package Id to take full advantage of flextudio push notification services.
