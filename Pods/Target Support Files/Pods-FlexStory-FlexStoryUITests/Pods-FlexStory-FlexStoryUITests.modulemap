@@ -1,6 +1,0 @@
-framework module Pods_FlexStory_FlexStoryUITests {
-  umbrella header "Pods-FlexStory-FlexStoryUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
