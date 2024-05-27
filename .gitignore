@@ -2,3 +2,5 @@
 /Pods
 Podfile.lock
 *.xcuserstate
+/FlexStory.xcworkspace
+/FlexStory.xcodeproj/xcuserdata
