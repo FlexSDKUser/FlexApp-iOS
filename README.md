@@ -226,8 +226,8 @@ In `AppDelegate.swift` file, follow these steps:
 This file is generated from [Firebase Console](https://console.firebase.google.com/ "Firebase Console") for the bundle identifier of your project.
 > Note: It is required to register the app in firebase project and provide Flextudio Team 'Server key' to send push notifications to your apps.
 
-PS : To receive push notification we need your p8 key files which is issued from Apple Development Center
-> Refer to this site : https://support.mobiroller.com/en/knowledgebase/5-how-to-create-a-key-file-p8-on-apple-to-send-push-notifications/	
+PS : To receive push notifications on iOS, an APNs authentication key (`.p8`) issued from your [Apple developer account](https://developer.apple.com/account/resources/authkeys/list) must be uploaded to your Firebase project (_Project settings > Cloud Messaging > APNs Authentication Key_) together with its Key ID and your Team ID.
+> Refer to these guides: [Create a private key (Apple)](https://developer.apple.com/help/account/keys/create-a-private-key/), [Upload your APNs authentication key (Firebase)](https://firebase.google.com/docs/cloud-messaging/ios/get-started)
 
 
 ### Step 12: Now, build  and run the project
