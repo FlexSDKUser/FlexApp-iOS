@@ -17,7 +17,7 @@ The <span style="color:orange"> Flextudio SDK </span> for iOS allows us to easil
 
 ### How it works
 
-The <span style="color:orange"> Flextudio SDK </span> enables use of all features and services supported by flextudio platform. By simply adding the SDK dependencies into a new iOS app project, a fully functional flex app can be built without any other setup or initalization.
+The <span style="color:orange"> Flextudio SDK </span> enables use of all features and services supported by flextudio platform. By simply adding the SDK dependencies into a new iOS app project, a fully functional flex app can be built without any other setup or initialization.
 
 ## Requirements
 
@@ -28,7 +28,7 @@ The minimum requirements for the <span style="color:orange"> Flextudio SDK </spa
 - `iOS 15.0 or higher`
 - `Cocoapods`
 
-> **Note**: <span style="color:orange"> Flextudio SDK </span> includes initialization of firebase push notification and other dependencies. You are only required to include google-services.plist corresponding to your package Id to take full advantage of flextudio push notification services.
+> **Note**: <span style="color:orange"> Flextudio SDK </span> includes initialization of firebase push notification and other dependencies. You are only required to include `GoogleService-Info.plist` corresponding to your package Id to take full advantage of flextudio push notification services.
 
 ## Quick start
 
@@ -46,7 +46,7 @@ File > New > Project > Select App...click Next.
 Provide your desired product name and organization identifier.
 Select Storyboard from Interface dropdown menu.
 Click Next and then click Finish.
-> **Note**: You need this bundle identifier to generate `GoogleServices-Info.plist` file for your application to support firebase push notification and other services.
+> **Note**: You need this bundle identifier to generate `GoogleService-Info.plist` file for your application to support firebase push notification and other services.
 
 ### Step 2: Open a terminal at project location. Create `Podfile` for the project using command **pod init**
 
@@ -59,7 +59,7 @@ pod init
 Open Podfile and place FlextudioSDK dependency under target 'yourproject'
 
 ```swift
-# platform :ios, '13.0'
+# platform :ios, '15.0'
 # Copy these source urls
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://FlexSDKCreator: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@github.com/FlexSDKCreator/SDK_ios_podspec.git'
@@ -70,7 +70,7 @@ target '<yourproject>' do
   use_frameworks! 
   # Pods for <yourproject>
   # Add FlextudioSDK pod with specific version
-  pod 'FlextudioSDK', '1.0.4'
+  pod 'FlextudioSDK', '1.0.27'
   end
 
 ```
@@ -81,7 +81,7 @@ target '<yourproject>' do
 pod install
 ```
 
-Wait until all dependencies are download and follow the instruction in terminal.
+Wait until all dependencies are downloaded and follow the instruction in terminal.
 
 ### Step 5: Please close any current Xcode sessions and open `yourproject.xcworkspace` for this project from now on
 
@@ -219,15 +219,15 @@ In `AppDelegate.swift` file, follow these steps:
 	```
 ![appdelegate](https://create-s3-test1.s3.ap-northeast-2.amazonaws.com/readme-ios-sdk/appdelegate.png "appdelegate")  
 
-### Step 11: Add `GoogleServices-Info.plist` file in your project
+### Step 11: Add `GoogleService-Info.plist` file in your project
 
-<img src="https://create-s3-test1.s3.ap-northeast-2.amazonaws.com/readme-ios-sdk/googleservice-info.png" alt="GoogleServices-Info.plist" width="50%" />  
+<img src="https://create-s3-test1.s3.ap-northeast-2.amazonaws.com/readme-ios-sdk/googleservice-info.png" alt="GoogleService-Info.plist" width="50%" />  
 
 This file is generated from [Firebase Console](https://console.firebase.google.com/ "Firebase Console") for the bundle identifier of your project.
-> Note: It is required to register the app in firebase project and provide Flextudio Team 'Server key' to send push notifiications to your apps. Alternatively, we (Flextudio Team) can assist you to generate the  `GoogleServices-Info.plist` file. For this you should provide us with <mark>.p8 APNs key file with your team id and key id</mark> from your [Apple developer account](https://developer.apple.com/account). 
+> Note: It is required to register the app in firebase project and provide Flextudio Team 'Server key' to send push notifications to your apps.
 
-PS : To recieve push notification we need your p8 key files which is issued from Apple Development Center
-> Refer to this site : https://support.mobiroller.com/en/knowledgebase/5-how-to-create-a-key-file-p8-on-apple-to-send-push-notifications/	
+PS : To receive push notifications on iOS, an APNs authentication key (`.p8`) issued from your [Apple developer account](https://developer.apple.com/account/resources/authkeys/list) must be uploaded to your Firebase project (_Project settings > Cloud Messaging > APNs Authentication Key_) together with its Key ID and your Team ID.
+> Refer to these guides: [Create a private key (Apple)](https://developer.apple.com/help/account/keys/create-a-private-key/), [Upload your APNs authentication key (Firebase)](https://firebase.google.com/docs/cloud-messaging/ios/get-started)
 
 
 ### Step 12: Now, build  and run the project
